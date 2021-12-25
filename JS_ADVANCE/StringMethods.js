@@ -138,19 +138,3 @@ function Quiz() {
 }
 // Quiz()
 //==================
-/*
-String Concat
-- The concat() method joins two or more strings.
-- The concat() method does not change the existing strings.
-- The concat() method returns a new string.
-https://www.w3schools.com/jsref/jsref_concat_string.asp
-*/
-function StringConcat() {
-  var words = "Sea"
-  var words2 = "Cucumber"
-
-  console.log(words.concat(words2)); // concat 2 strings
-  console.log(words.concat(" ", words2)); // concat 2 strings
-
-}
-// StringConcat()
