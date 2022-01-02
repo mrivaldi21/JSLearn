@@ -217,12 +217,71 @@ function arrMap() {
   })
 }
 // arrMap()
-function Quiz(){
+function Quiz() {
   var strs = "Saya ingin belajar bersama"
   var conf = strs.split(" ")
   console.log(conf);
   conf.forEach(function (item, index) {
-    console.log("item: ",item,"on index ",index);
+    console.log("item: ", item, "on index ", index);
   })
 }
-Quiz()
+// Quiz()
+//================
+/*
+Array Filter
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+The filter() method does not execute the function for empty elements.
+The filter() method does not change the original array.
+https://www.w3schools.com/jsref/jsref_filter.asp
+*/
+function arrFilter() {
+  let peoples = [{
+      name: "andi",
+      gender: "male"
+    },
+    {
+      name: "sarah",
+      gender: "female"
+    }, {
+      name: "cindy",
+      gender: "female"
+    }
+  ];
+  let female = peoples.filter(people => {
+    return people.gender === "female"
+  });
+  return female
+}
+// console.log(arrFilter());
+//================
+/*
+Array Every
+The every() method executes a function for each array element.
+The every() method returns true if the function returns true for all elements.
+The every() method returns false if the function returns false for one element.
+The every() method does not execute the function for empty elements.
+The every() method does not change the original array
+https://www.w3schools.com/jsref/jsref_every.asp
+*/
+function arrEvery() {
+  let products = [{
+      name: "Apple",
+      type: "fruit"
+    },
+    {
+      name: "monitor",
+      type: "Peripheral"
+    },
+    {
+      name: "water melon",
+      type: "fruit"
+    },
+    {
+      name: "Table",
+      type: "furniture"
+    }
+  ];
+  console.log(products.every(product=>product.type === "fruit"));
+  // return product;
+}
+arrEvery()
