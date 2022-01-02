@@ -138,3 +138,153 @@ function Quiz() {
 }
 // Quiz()
 //==================
+/*
+String incudes
+The includes() method returns true if a string contains a specified string.
+Otherwise it returns false.
+The includes() method is case sensitive.
+https://www.w3schools.com/jsref/jsref_includes.asp
+*/
+function StrInclude() {
+  var inc = "I want to break free";
+  console.log(inc.includes("nt")); //check is the word or string in available on the variable or not
+  console.log(inc.includes("hello"));
+
+}
+// StrInclude()
+//==================
+/*
+String StartWith and End with
+The startsWith() method returns true if a string starts with a specified string.
+Otherwise it returns false.
+The startsWith() method is case sensitive.
+https://www.w3schools.com/jsref/jsref_startswith.asp
+
+The endsWith() method returns true if a string ends with a specified string.
+Otherwise it returns false.
+https://www.w3schools.com/jsref/jsref_endswith.asp
+*/
+function StartEnd() {
+  var start = "I'm good at cooking";
+  console.log(start.startsWith("I")); //check the first string on variable
+  console.log(start.startsWith("good", 4)); //check the first string on variable with specific index
+
+  console.log(start.endsWith("king")); //check the end string on variable
+
+}
+
+// StartEnd()
+//==================
+/*
+String Repeat
+The repeat() method returns a string with a number of copies of a string.
+The repeat() method returns a new string.
+The repeat() method does not change the original string.
+
+https://www.w3schools.com/jsref/jsref_repeat.asp
+*/
+function StrRepeat() {
+  var x = "mouse ";
+  console.log(x.repeat(3)); //show repeat 3 times
+}
+// StrRepeat()
+//==================
+/*
+String Conversion
+The toString() method convert value to string 
+https://w3schools.com/jsref/jsref_string.asp
+*/
+function StrConvert() {
+  var x = "number";
+  var y = 2;
+  console.log(typeof x);
+  console.log(typeof y);
+  var m = x.toString(); //conversion using toString
+  console.log(typeof m);
+
+  var m2 = x.valueOf(); //conversion using valueOf
+  console.log(typeof m2);
+  console.log(m2);
+}
+// StrConvert()
+//==================
+/*
+String IndexOf
+The indexOf() method returns the position of the first occurrence of a specified value in a string.
+The indexOf() method returns -1 if the value is not found
+The indexOf() method is case sensitive.
+https://www.w3schools.com/jsref/jsref_indexof.asp
+*/
+function indexOfx() {
+  var myIndex = "I was learning something"
+  console.log(myIndex.indexOf("was"));
+}
+// indexOfx()
+//==================
+/*
+String Last Index Of
+The lastIndexOf() method returns the index (position) of the last occurrence of a specified value in a string.
+The lastIndexOf() method searches the string from the end to the beginning.
+The lastIndexOf() method returns the index from the beginning (position 0).
+The lastIndexOf() method returns -1 if the value is not found.
+The lastIndexOf() method is case sensitive.
+https://www.w3schools.com/jsref/jsref_lastindexof.asp
+*/
+function LastindexOfx() {
+  var onIndex = "I was learning something an is good"
+  console.log(onIndex.lastIndexOf("an"));
+}
+// LastindexOfx()
+//==================
+/*
+String search
+The search() method searches a string for a value.
+The search() method returns the index (position) of a match.
+The search() method returns -1 if no match is found.
+The search() method is case sensitive.
+
+search is same as index of, but using regular expression
+https://www.w3schools.com/jsref/jsref_search.asp
+*/
+function strSearch() {
+  var strscrh = "Learning javascript on my computer"
+  console.log(strscrh.search("java"));
+}
+// strSearch()
+//==================
+/*
+String Match
+The match() method searches a string for a match against a regular expression.
+The match() method returns the matches in an array.
+The match() method returns null if no match is found.
+https://www.w3schools.com/jsref/jsref_match.asp
+*/
+function strMatch() {
+  var mat = "i'm good as cooking"
+  console.log(mat.match("good")); //search word good in index of array
+  console.log(mat.match("as"));
+  console.log(mat.match(/as/));
+
+}
+// strMatch()
+//==================
+// Quiz
+function Quiz(){
+  var words =  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
+  console.log(words.match("are"));
+  console.log(words.match("words"));
+}
+// Quiz()
+//==================
+/*
+String replace
+The match() method searches a string for a match against a regular expression.
+The match() method returns the matches in an array.
+The match() method returns null if no match is found.
+https://www.w3schools.com/jsref/jsref_match.asp
+*/
+function strReplace() {
+ var search = "this is input of the program data"
+ console.log(search.replace("the","this"));
+}
+strReplace()
